@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3C60CE01A02BC3300D539DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C60CDF1A02BC3300D539DA /* main.m */; };
+		E3C60CE31A02BC3300D539DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C60CE21A02BC3300D539DA /* AppDelegate.m */; };
+		E3C60CE61A02BC3300D539DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C60CE51A02BC3300D539DA /* ViewController.m */; };
+		E3C60CE91A02BC3300D539DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C60CE71A02BC3300D539DA /* Main.storyboard */; };
+		E3C60CEB1A02BC3300D539DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C60CEA1A02BC3300D539DA /* Images.xcassets */; };
+		E3C60CEE1A02BC3300D539DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3C60CEC1A02BC3300D539DA /* LaunchScreen.xib */; };
+		E3C60CFA1A02BC3400D539DA /* Veeva_SimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C60CF91A02BC3400D539DA /* Veeva_SimulatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3C60CF41A02BC3300D539DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3C60CD21A02BC3300D539DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3C60CD91A02BC3300D539DA;
+			remoteInfo = "Veeva Simulator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3C60CDA1A02BC3300D539DA /* Veeva Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Veeva Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C60CDE1A02BC3300D539DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C60CDF1A02BC3300D539DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3C60CE11A02BC3300D539DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E3C60CE21A02BC3300D539DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E3C60CE41A02BC3300D539DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E3C60CE51A02BC3300D539DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E3C60CE81A02BC3300D539DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3C60CEA1A02BC3300D539DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E3C60CED1A02BC3300D539DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E3C60CF31A02BC3300D539DA /* Veeva SimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Veeva SimulatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C60CF81A02BC3400D539DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C60CF91A02BC3400D539DA /* Veeva_SimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Veeva_SimulatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3C60CD71A02BC3300D539DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C60CF01A02BC3300D539DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3C60CD11A02BC3300D539DA = {
+			isa = PBXGroup;
+			children = (
+				E3C60CDC1A02BC3300D539DA /* Veeva Simulator */,
+				E3C60CF61A02BC3300D539DA /* Veeva SimulatorTests */,
+				E3C60CDB1A02BC3300D539DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3C60CDB1A02BC3300D539DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3C60CDA1A02BC3300D539DA /* Veeva Simulator.app */,
+				E3C60CF31A02BC3300D539DA /* Veeva SimulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3C60CDC1A02BC3300D539DA /* Veeva Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				E3C60CE11A02BC3300D539DA /* AppDelegate.h */,
+				E3C60CE21A02BC3300D539DA /* AppDelegate.m */,
+				E3C60CE41A02BC3300D539DA /* ViewController.h */,
+				E3C60CE51A02BC3300D539DA /* ViewController.m */,
+				E3C60CE71A02BC3300D539DA /* Main.storyboard */,
+				E3C60CEA1A02BC3300D539DA /* Images.xcassets */,
+				E3C60CEC1A02BC3300D539DA /* LaunchScreen.xib */,
+				E3C60CDD1A02BC3300D539DA /* Supporting Files */,
+			);
+			path = "Veeva Simulator";
+			sourceTree = "<group>";
+		};
+		E3C60CDD1A02BC3300D539DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3C60CDE1A02BC3300D539DA /* Info.plist */,
+				E3C60CDF1A02BC3300D539DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3C60CF61A02BC3300D539DA /* Veeva SimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3C60CF91A02BC3400D539DA /* Veeva_SimulatorTests.m */,
+				E3C60CF71A02BC3400D539DA /* Supporting Files */,
+			);
+			path = "Veeva SimulatorTests";
+			sourceTree = "<group>";
+		};
+		E3C60CF71A02BC3400D539DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3C60CF81A02BC3400D539DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3C60CD91A02BC3300D539DA /* Veeva Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C60CFD1A02BC3400D539DA /* Build configuration list for PBXNativeTarget "Veeva Simulator" */;
+			buildPhases = (
+				E3C60CD61A02BC3300D539DA /* Sources */,
+				E3C60CD71A02BC3300D539DA /* Frameworks */,
+				E3C60CD81A02BC3300D539DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Veeva Simulator";
+			productName = "Veeva Simulator";
+			productReference = E3C60CDA1A02BC3300D539DA /* Veeva Simulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3C60CF21A02BC3300D539DA /* Veeva SimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C60D001A02BC3400D539DA /* Build configuration list for PBXNativeTarget "Veeva SimulatorTests" */;
+			buildPhases = (
+				E3C60CEF1A02BC3300D539DA /* Sources */,
+				E3C60CF01A02BC3300D539DA /* Frameworks */,
+				E3C60CF11A02BC3300D539DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3C60CF51A02BC3300D539DA /* PBXTargetDependency */,
+			);
+			name = "Veeva SimulatorTests";
+			productName = "Veeva SimulatorTests";
+			productReference = E3C60CF31A02BC3300D539DA /* Veeva SimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3C60CD21A02BC3300D539DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "JJ Mifsud";
+				TargetAttributes = {
+					E3C60CD91A02BC3300D539DA = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E3C60CF21A02BC3300D539DA = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = E3C60CD91A02BC3300D539DA;
+					};
+				};
+			};
+			buildConfigurationList = E3C60CD51A02BC3300D539DA /* Build configuration list for PBXProject "Veeva Simulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3C60CD11A02BC3300D539DA;
+			productRefGroup = E3C60CDB1A02BC3300D539DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3C60CD91A02BC3300D539DA /* Veeva Simulator */,
+				E3C60CF21A02BC3300D539DA /* Veeva SimulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3C60CD81A02BC3300D539DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C60CE91A02BC3300D539DA /* Main.storyboard in Resources */,
+				E3C60CEE1A02BC3300D539DA /* LaunchScreen.xib in Resources */,
+				E3C60CEB1A02BC3300D539DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C60CF11A02BC3300D539DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3C60CD61A02BC3300D539DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C60CE61A02BC3300D539DA /* ViewController.m in Sources */,
+				E3C60CE31A02BC3300D539DA /* AppDelegate.m in Sources */,
+				E3C60CE01A02BC3300D539DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C60CEF1A02BC3300D539DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C60CFA1A02BC3400D539DA /* Veeva_SimulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3C60CF51A02BC3300D539DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3C60CD91A02BC3300D539DA /* Veeva Simulator */;
+			targetProxy = E3C60CF41A02BC3300D539DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3C60CE71A02BC3300D539DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C60CE81A02BC3300D539DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3C60CEC1A02BC3300D539DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C60CED1A02BC3300D539DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3C60CFB1A02BC3400D539DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3C60CFC1A02BC3400D539DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3C60CFE1A02BC3400D539DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Veeva Simulator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E3C60CFF1A02BC3400D539DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Veeva Simulator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E3C60D011A02BC3400D539DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Veeva SimulatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Veeva Simulator.app/Veeva Simulator";
+			};
+			name = Debug;
+		};
+		E3C60D021A02BC3400D539DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Veeva SimulatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Veeva Simulator.app/Veeva Simulator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3C60CD51A02BC3300D539DA /* Build configuration list for PBXProject "Veeva Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C60CFB1A02BC3400D539DA /* Debug */,
+				E3C60CFC1A02BC3400D539DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C60CFD1A02BC3400D539DA /* Build configuration list for PBXNativeTarget "Veeva Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C60CFE1A02BC3400D539DA /* Debug */,
+				E3C60CFF1A02BC3400D539DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E3C60D001A02BC3400D539DA /* Build configuration list for PBXNativeTarget "Veeva SimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C60D011A02BC3400D539DA /* Debug */,
+				E3C60D021A02BC3400D539DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3C60CD21A02BC3300D539DA /* Project object */;
+}
