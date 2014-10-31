@@ -1,0 +1,109 @@
+* {
+    -webkit-user-select: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../img/bg.png);
+    background-size: 100%;
+    overflow: auto;
+    background-repeat: no-repeat;
+}
+
+div {
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    background-image: url(../img/nav.png);
+    width: 232px;
+    height: 60px;
+    top: 25px;
+    right: 27px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#bottomtext {
+    background-image: url(../img/bottom.png);
+    width: 368px;
+    height: 14px;
+    top: 729px;
+    left: 36px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#bottomtext.grey {
+    background-image: url(../img/bottomgrey.png);
+}
+
+.bottomnav {
+    bottom: 8px;
+    height: 60px;
+    left: 86px;
+    width: 139px;
+}
+
+#pi {
+    left: 290px;
+    width: 119px;
+}
+
+#hamburger {
+    top: 8px;
+    height: 60px;
+    left: 958px;
+    width: 59px;
+}
+
+#homelogo {
+    top: 8px;
+    height: 60px;
+    left: 808px;
+    width: 153px;
+}
+
+#wheelnav {
+    z-index: 99999;
+    width: 1024px;
+    height: 768px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: .3s;
+    pointer-events: none;
+}
+
+#wheelnav.on {
+    background-color: rgba(0,0,0,.9);
+    pointer-events: auto;
+}
+
+#wheelnav #thewheel {
+    width: 322px;
+    height: 722px;
+    top: 42px;
+    right: 0;
+    background-image: url(../img/salixwheel.png);
+    -webkit-transition: .5s;
+    -webkit-transform-origin: 322px 340px;
+    -webkit-transform: rotate(180deg);
+}
+
+#wheelnav #thewheel.on {
+    -webkit-transform: rotate(0deg);
+}
+
+#wheelnav #thewheel.disabled {
+    display: none;
+}
