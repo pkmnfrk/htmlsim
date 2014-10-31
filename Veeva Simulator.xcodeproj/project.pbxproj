@@ -14,6 +14,7 @@
 		E3C60CEB1A02BC3300D539DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C60CEA1A02BC3300D539DA /* Images.xcassets */; };
 		E3C60CEE1A02BC3300D539DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3C60CEC1A02BC3300D539DA /* LaunchScreen.xib */; };
 		E3C60CFA1A02BC3400D539DA /* Veeva_SimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C60CF91A02BC3400D539DA /* Veeva_SimulatorTests.m */; };
+		E3C60D041A02D75C00D539DA /* html in Resources */ = {isa = PBXBuildFile; fileRef = E3C60D031A02D75C00D539DA /* html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E3C60CF31A02BC3300D539DA /* Veeva SimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Veeva SimulatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C60CF81A02BC3400D539DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C60CF91A02BC3400D539DA /* Veeva_SimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Veeva_SimulatorTests.m; sourceTree = "<group>"; };
+		E3C60D031A02D75C00D539DA /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; name = html; path = "Veeva Simulator/html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		E3C60CD11A02BC3300D539DA = {
 			isa = PBXGroup;
 			children = (
+				E3C60D031A02D75C00D539DA /* html */,
 				E3C60CDC1A02BC3300D539DA /* Veeva Simulator */,
 				E3C60CF61A02BC3300D539DA /* Veeva SimulatorTests */,
 				E3C60CDB1A02BC3300D539DA /* Products */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C60D041A02D75C00D539DA /* html in Resources */,
 				E3C60CE91A02BC3300D539DA /* Main.storyboard in Resources */,
 				E3C60CEE1A02BC3300D539DA /* LaunchScreen.xib in Resources */,
 				E3C60CEB1A02BC3300D539DA /* Images.xcassets in Resources */,
@@ -346,8 +350,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Veeva Simulator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -356,8 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Veeva Simulator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -414,6 +422,7 @@
 				E3C60CFF1A02BC3400D539DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3C60D001A02BC3400D539DA /* Build configuration list for PBXNativeTarget "Veeva SimulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				E3C60D021A02BC3400D539DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,13 +9,29 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *veevaView;
 
 @end
 
 @implementation ViewController
 
+- (BOOL)prefersStatusBarHidden {return YES;}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSError *error = nil;
+    NSString *yourFolderPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"html"];
+    NSArray  *yourFolderContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:yourFolderPath error:&error];
+    NSLog(@"%@", yourFolderContents);
+    
+    NSURL * resourcePathURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"html/index" ofType:@"html"]];
+    if(resourcePathURL)
+    {
+        NSURLRequest * req = [NSURLRequest requestWithURL: resourcePathURL];
+        [self.veevaView loadRequest: req];
+    }
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
