@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A1796408-31F2-4F73-94FD-558BA8B40687</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Veeva Simulator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9F482C8804F9705D0784FD0A244D8E8435158149</key>
+		<string>https://github.com/KlickInc/suboxone-hcp-iva.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Veeva Simulator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9F482C8804F9705D0784FD0A244D8E8435158149</key>
+		<string>../../../../../../Veeva%20Simulator/Veeva%20Simulator/html/suboxone-hcp-iva</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F482C8804F9705D0784FD0A244D8E8435158149</string>
+			<key>IDESourceControlWCCName</key>
+			<string>suboxone-hcp-iva</string>
+		</dict>
+	</array>
+</dict>
+</plist>

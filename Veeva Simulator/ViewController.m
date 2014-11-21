@@ -25,7 +25,7 @@
     NSArray  *yourFolderContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:yourFolderPath error:&error];
     NSLog(@"%@", yourFolderContents);
     
-    NSURL * resourcePathURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"html/index" ofType:@"html"]];
+    NSURL * resourcePathURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"html/suboxone-hcp-iva/build/1/1/1" ofType:@"html"]];
     if(resourcePathURL)
     {
         NSURLRequest * req = [NSURLRequest requestWithURL: resourcePathURL];
