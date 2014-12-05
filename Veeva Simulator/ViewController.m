@@ -7,44 +7,48 @@
 //
 
 #import "ViewController.h"
+#import "MyURLCache.h"
 
 #define ll8 int
 
-@interface ViewController ()
+@interface ViewController () <UIWebViewDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *veevaView;
-
+@property (strong, nonatomic) UIAlertView * loadingAlert;
+@property int loadnum;
+@property (strong, nonatomic) NSURLRequest * lastReq;
+@property (strong, nonatomic) NSURLRequest * toLoad;
 @end
 
 @implementation ViewController
 
 - (BOOL)prefersStatusBarHidden {return YES;}
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
+-(void)loadPage {
+    //[[NSURLCache sharedURLCache] removeAllCachedResponses];
+    
     NSString *fileToLoad = [self findHtmlIndex];
     
-//    NSError *error = nil;
-//    NSString *yourFolderPath = @"Documents";
-//    NSArray  *yourFolderContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:yourFolderPath error:&error];
-//    NSString *fileToLoad = nil;
+    //    NSError *error = nil;
+    //    NSString *yourFolderPath = @"Documents";
+    //    NSArray  *yourFolderContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:yourFolderPath error:&error];
+    //    NSString *fileToLoad = nil;
     
-//    for (NSString *object in yourFolderContents) {
-//        if ([[object pathExtension] isEqualToString:@"html"])
-//        {
-//            fileToLoad = [object substringToIndex: [object length] - 5];
-//            
-//            
-//            NSLog(@"%@", fileToLoad);
-//            break;
-//        }
-//        
-//        else {
-//            NSLog(@"NO");
-//        }
-//        
-//        NSLog(@"===================================");
-//    }
+    //    for (NSString *object in yourFolderContents) {
+    //        if ([[object pathExtension] isEqualToString:@"html"])
+    //        {
+    //            fileToLoad = [object substringToIndex: [object length] - 5];
+    //
+    //
+    //            NSLog(@"%@", fileToLoad);
+    //            break;
+    //        }
+    //
+    //        else {
+    //            NSLog(@"NO");
+    //        }
+    //
+    //        NSLog(@"===================================");
+    //    }
     
     if (!fileToLoad) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sup Bro" message:@"Yo got no HTMLz in here" delegate:self cancelButtonTitle:@"Ok, Cool" otherButtonTitles:nil];
@@ -58,10 +62,34 @@
     
     if(resourcePathURL)
     {
-        NSURLRequest * req = [NSURLRequest requestWithURL: resourcePathURL];
+        if (self.toLoad){
+            [[NSURLCache sharedURLCache] removeCachedResponseForRequest:self.lastReq];
+            [[NSURLCache sharedURLCache] removeAllCachedResponses];
+        
+        }
+        
+        self.toLoad = [NSURLRequest requestWithURL:resourcePathURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
+
+        NSURLRequest * req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]];
+        
         [self.veevaView loadRequest: req];
     }
 
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //to prevent internal caching of webpages in application
+    //NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0 diskCapacity:0 diskPath:nil];
+    //[NSURLCache setSharedURLCache:sharedCache];
+    
+    MyURLCache * cache = [[MyURLCache alloc] initWithMemoryCapacity:0 diskCapacity:0 diskPath:nil];
+    [NSURLCache setSharedURLCache:cache];
+    
+    self.veevaView.delegate = self;
+
+    [self loadPage];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -94,11 +122,10 @@
             
             NSString *urlString = [url absoluteString];
             
-  
-            
             if ([[url pathExtension] isEqualToString:@"html"]) {
-//                NSLog(urlString);
-                return [urlString substringToIndex:[urlString length] -5];
+                urlString = [NSString stringWithFormat:@"%@?v=%d", urlString, self.loadnum++];
+                NSLog(@"%@", urlString);
+                return urlString;//[urlString substringToIndex:[urlString length] -5];
             }
             
 
@@ -114,6 +141,36 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    if(motion == UIEventSubtypeMotionShake && !self.loadingAlert) {
+        self.loadingAlert = [[UIAlertView alloc] initWithTitle:@"Loading" message:@"Loading" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [self.loadingAlert show];
+        [self loadPage];
+    }
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    if(self.loadingAlert) {
+        [self.loadingAlert dismissWithClickedButtonIndex:0 animated:YES];
+    }
+    
+    if(self.toLoad) {
+        self.lastReq = self.toLoad;
+        self.toLoad = nil;
+        
+        [self.veevaView loadRequest:self.lastReq];
+    }
+}
+
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    self.loadingAlert = nil;
 }
 
 @end
